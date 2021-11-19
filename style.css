@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body
+{     
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;                                                                                                
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+p
+{
+    font-weight: 300;
+    color: #111;
+}
+
+
 body,ul
 {
     margin: 0px;
@@ -40,6 +56,34 @@ font-weight: bold;
 }
 #btn-mobile{
     display: none;
+}
+
+.banner
+{
+    position: relative;
+    width:100%;
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://www.themasterpicks.com/wp-content/uploads/2020/04/22b22287602523.5dbd29081561d.gif");
+    background-size: cover;
+}
+.banner .content
+{
+    max-width:900px;
+    text-align: center;
+}
+.banner .content  h2
+{
+font-size: 5em;
+color:#fff;
+
+}
+.banner .content  p
+{
+font-size: 1em;
+color:#fff;
 }
 
 @media (max-width:600px)
