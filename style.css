@@ -66,7 +66,7 @@ font-weight: bold;
     display:flex;
     justify-content: center;
     align-items: center;
-    background: url("https://www.themasterpicks.com/wp-content/uploads/2020/04/22b22287602523.5dbd29081561d.gif");
+    background: url("https://i.pinimg.com/originals/99/8e/05/998e055aba57c24138220937cc5166ab.gif");
     background-size: cover;
 }
 .banner .content
@@ -84,6 +84,24 @@ color:#fff;
 {
 font-size: 1em;
 color:#fff;
+}
+.copyrightText
+{
+    padding: 8px 40px;
+    border-top:1px solid rgba(0,0,0,0.1);
+    text-align: center;
+}
+.copyrightText p
+{
+    color: #333;
+
+}
+.copyrightText a
+{
+    color: #ff0157;
+    font-weight: 500;
+    text-decoration: none;
+    
 }
 
 @media (max-width:600px)
