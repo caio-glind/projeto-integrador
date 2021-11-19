@@ -6,11 +6,8 @@ body
     box-sizing: border-box;                                                                                                
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-}
-p
-{
-    font-weight: 300;
-    color: #111;
+    color: #fff;
+   background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
 }
 
 
@@ -25,7 +22,7 @@ a{
 }
 a:hover
 {
-    background:#f15;
+    
 }
 #logo
 {
@@ -40,7 +37,19 @@ font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #f15;
+    background: #fff;
+    border-radius: 5px;
+}
+#header a{
+    color: black;
+    text-decoration: none;
+    transition: 0.8s;
+
+}
+#header a:hover{
+    background:#f15;
+    border-radius: 50px;
+
 }
 #menu
 {
@@ -85,11 +94,146 @@ color:#fff;
 font-size: 1em;
 color:#fff;
 }
+.produtos{
+    margin-top:5ch;
+    margin-left:2ch;
+    flex-direction: row;
+    display: flex;
+    margin-left: 10ch;
+}
+.produtoA{
+  line-height:1.2;
+  background-color: rgba(25,2,47,0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  /*background: #f15;*/
+  width: 25ch;
+  height: 40ch;
+  border-radius: 10px;
+  transition: 0.8s;
+  
+}
+.produtoA:hover{
+    position: relative;
+    background: #f15;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    width: 26ch;
+    height: 41ch;
+    top:-2ch;
+    left: 2ch;
+}
+.produtoA img{
+    width: 100%;
+    height: 15ch;
+    border-radius:10px ;
+}
+.produtoA h4{
+    position: relative;
+    top: -2ch;
+}
+.produtoA p{
+    position: relative;
+    top: -3ch;
+}
+.produtoA button{
+    position: relative;
+    top: -6ch;
+    left: 9ch;
+    width: 15ch;
+    height: 8ch;
+    border-radius: 10px;
+    border: none;
+    
+}
+
+.produtoB{
+    line-height:1.2;
+    background-color: rgba(25,2,47,0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    /*background: #f15;*/
+    width: 25ch;
+    height: 40ch;
+    border-radius: 10px;
+    transition: 0.8s;
+    margin-left: 4ch;
+  }
+  .produtoB:hover{
+      position: relative;
+      background: #f15;
+      box-shadow:0 5px 20px rgba(0,0,0,0.05);
+      width: 26ch;
+      height: 41ch;
+      top:-2ch;
+      left: 2ch;
+  }
+  .produtoB img{
+      width: 100%;
+      height: 15ch;
+      border-radius:10px ;
+  }
+  .produtoB h4{
+      position: relative;
+      top: -2ch;
+  }
+  .produtoB p{
+      position: relative;
+      top: -3ch;
+  }
+  .produtoB button{
+      position: relative;
+      top: -6ch;
+      left: 9ch;
+      width: 15ch;
+      height: 8ch;
+      border-radius: 10px;
+      border: none;
+      
+  }
+  @media (max-width:1000px){
+    .produtos{
+        flex-direction:column;
+    } 
+    .produtoA{
+        position: relative;
+        margin-left: -5ch;
+    }
+    .produtoB{
+        margin-top: 4ch;
+     margin-left: -5ch;
+    }
+
+    
+
+
+
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .copyrightText
 {
     padding: 8px 40px;
     border-top:1px solid rgba(0,0,0,0.1);
     text-align: center;
+    background: #fff;
 }
 .copyrightText p
 {
