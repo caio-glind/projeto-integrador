@@ -92,19 +92,21 @@ font-weight: bold;
 }
 .produtos{
     margin-top:5ch;
-    margin-left:2ch;
+    
     flex-direction: row;
     display: flex;
-    margin-left: 10ch;
+    margin-left: 2ch;
 }
 .produtoA{
+    position: inherit;
+    
   line-height:1.2;
   background-color: rgba(25,2,47,0.2);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   /*background: #f15;*/
-  width: 25ch;
-  height: 40ch;
+  width: 30ch;
+  height: 50ch;
   border-radius: 10px;
   transition: 0.8s;
   
@@ -113,10 +115,10 @@ font-weight: bold;
     position: relative;
     background: #f15;
     box-shadow:0 5px 20px rgba(0,0,0,0.05);
-    width: 26ch;
-    height: 41ch;
+    width: 32ch;
+    height: 52ch;
     top:-2ch;
-    left: 2ch;
+    
 }
 .produtoA img{
     width: 100%;
@@ -125,43 +127,52 @@ font-weight: bold;
 }
 .produtoA h4{
     position: relative;
-    top: -2ch;
+    
 }
 .produtoA p{
     position: relative;
-    top: -3ch;
+   
 }
 .produtoA button{
+    color: #fff;
+    background: none;
     position: relative;
-    top: -6ch;
     left: 9ch;
-    width: 15ch;
-    height: 8ch;
-    border-radius: 10px;
-    border: none;
+    top: 5ch;
+    width: 10ch;
+    height:5ch;
+    border-radius: 30px;
+    border: solid 2px #132743;
+    transition: 0.5s;
     
 }
+.produtoA button:hover{
+    background: #132743;
+    border: none;
+
+}
+
 
 .produtoB{
-    line-height:1.2;
-    background-color: rgba(25,2,47,0.2);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    /*background: #f15;*/
-    width: 25ch;
-    height: 40ch;
-    border-radius: 10px;
-    transition: 0.8s;
-    margin-left: 4ch;
+  position: inherit;
+    margin-left: 2ch;
+  line-height:1.2;
+  background-color: rgba(25,2,47,0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  /*background: #f15;*/
+  width: 30ch;
+  height: 50ch;
+  border-radius: 10px;
+  transition: 0.8s;
   }
   .produtoB:hover{
-      position: relative;
-      background: #f15;
-      box-shadow:0 5px 20px rgba(0,0,0,0.05);
-      width: 26ch;
-      height: 41ch;
-      top:-2ch;
-      left: 2ch;
+    position: relative;
+    background: #f15;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    width: 32ch;
+    height: 52ch;
+    top:-2ch;
   }
   .produtoB img{
       width: 100%;
@@ -170,22 +181,62 @@ font-weight: bold;
   }
   .produtoB h4{
       position: relative;
-      top: -2ch;
+     
   }
   .produtoB p{
       position: relative;
-      top: -3ch;
-  }
-  .produtoB button{
-      position: relative;
-      top: -6ch;
-      left: 9ch;
-      width: 15ch;
-      height: 8ch;
-      border-radius: 10px;
-      border: none;
       
   }
+  .produtoB button{
+    color: #fff;
+    background: none;
+    position: relative;
+    left: 9ch;
+    top: 5ch;
+    width: 10ch;
+    height:5ch;
+    border-radius: 30px;
+    border: solid 2px #132743;
+    transition: 0.5s;
+  }
+  .produtoB button:hover{
+    background: #132743;
+    border: none;
+
+}
+
+      .copyrightText
+      {
+         padding: 8px 40px;
+         border-top:1px solid rgba(0,0,0,0.1);
+         text-align: center;
+         background: #fff;
+      }
+      .copyrightText p
+      {
+         color: #333;
+     
+      }
+      .copyrightText a
+      {
+         color: #ff0157;
+         font-weight: 500;
+         text-decoration: none;
+         
+      }
+      #banner{
+      width: 100%;
+      }
+      #carouselExampleIndicators{
+          width: 100%;
+      }
+  .carousel-item  img{
+      position: relative;
+     width: 100%;
+      height: 50ch;         
+  }
+      
+  
   @media (max-width:1000px){
     .produtos{
         flex-direction:column;
@@ -199,25 +250,7 @@ font-weight: bold;
      margin-left: -5ch;
     }
 
- .copyrightText
- {
-    padding: 8px 40px;
-    border-top:1px solid rgba(0,0,0,0.1);
-    text-align: center;
-    background: #fff;
- }
- .copyrightText p
- {
-    color: #333;
 
- }
- .copyrightText a
- {
-    color: #ff0157;
-    font-weight: 500;
-    text-decoration: none;
-    
- }
 
 
     #btn-mobile
@@ -292,6 +325,10 @@ font-weight: bold;
     {
         transform: rotate(-135deg);
         top: -7px;
+
+    }
+    #banner{
+        width: 100%;
 
     }
 
