@@ -236,7 +236,67 @@ font-weight: bold;
       height: 50ch;         
   }
       
-  
+footer{
+    background-color: rgb(78, 10, 141);
+    height: 40vh;
+}
+#footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    box-sizing: border-box;
+}
+#map{
+    margin-left: 5vw;
+    margin-top: 5vh;
+    width: 35vw;
+    height: 30vh;
+    background-image: url("../img/map.png");
+    background-color: thistle;
+    border: solid 5px rgb(78, 10, 141);
+    border-radius: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#info{
+    margin-right: 5vw;
+    margin-top: 5vh;
+    width: 25vw;
+    color: white;
+    text-align: justify;
+}
+#midias{
+    width: 100%;
+    display: inline-flex;
+}
+#insta{
+    width: 2vw;
+    height: 2vw;
+    margin-right: 1vw;
+    background-image: url(../img/vec-ig.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#fb{
+    width: 2vw;
+    height: 2vw;
+    margin-right: 1vw;
+    background-image: url(../img/vec-fb.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#wpp{
+    width: 2vw;
+    height: 2vw;
+    background-image: url(../img/vec-wp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
   @media (max-width:1000px){
     .produtos{
         flex-direction:column;
@@ -332,5 +392,66 @@ font-weight: bold;
 
     }
 
-
+    footer{
+        background-color: rgb(78, 10, 141);
+        height: 80vh;
+    }
+    #footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 70px;
+        box-sizing: border-box;
+    }
+    #map{
+        margin-left: 5vw;
+        margin-top: 5vh;
+        width: 90vw;
+        height: 30vh;
+        background-image: url("../img/map.png");
+        background-color: thistle;
+        border: solid 5px rgb(78, 10, 141);
+        border-radius: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    #info{
+        margin-left: 5vw;
+        margin-top: 5vh;
+        width: 90vw;
+        color: white;
+        text-align: justify;
+    }
+    #midias{
+        width: 100%;
+        display: inline-flex;
+    }
+    #insta{
+        width: 8vw;
+        height: 8vw;
+        margin-right: 1vw;
+        background-image: url(../img/vec-ig.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #fb{
+        width: 8vw;
+        height: 8vw;
+        margin-right: 1vw;
+        background-image: url(../img/vec-fb.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #wpp{
+        width: 8vw;
+        height: 8vw;
+        background-image: url(../img/vec-wp.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
