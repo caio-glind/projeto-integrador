@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body
+{     
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;                                                                                                
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    color: #fff;
+   background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+}
+
+
+body,ul
+{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+#logo
+{
+    font-size: 1.5rem;
+font-weight: bold;
+}
+#header
+{
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 5px;
+}
+#header a{
+    color: black;
+    text-decoration: none;
+    transition: 0.8s;
+
+}
+#header a:hover{
+    background:#f15;
+    border-radius: 50px;
+
+}
+#menu
+{
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+#menu a
+{
+    display: block;
+    padding: .5rem;
+
+}
+#btn-mobile{
+    display: none;
+}
+
+/*baner !!!!!*/
+#items-wrapper{
+    position: inherit;
+  
+    width: 100%;
+}
+#items{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+   
+}
+.item{
+    flex: none;
+
+    width: 100%;
+    height: 400px;
+    scroll-snap-align: start; 
+    pointer-events: none;
+}
+#items img{
+    width: 100%;
+    height: 100%;
+}
+.produtos{
+    margin-left: 5ch;
+    margin-top:5ch;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: auto;
+   
+    
+    height: auto;
+   /* flex-direction: row;
+    display: flex;
+    margin-left: 2ch;*/
+}
+.produtoA{
+    position: inherit;
+    margin: 5ch 3ch;
+  line-height:1.2;
+  background-color: rgba(25,2,47,0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  /*background: #f15;*/
+  width: 30ch;
+  height: 50ch;
+  border-radius: 10px;
+  transition: 0.8s;
+  
+}
+.produtoA:hover{
+    position: relative;
+    background: #f15;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    width: 32ch;
+    height: 52ch;
+    top:-2ch;
+    
+}
+.produtoA img{
+    width: 100%;
+    height: 15ch;
+    border-radius:10px ;
+}
+.produtoA h4{
+    position: relative;
+    
+}
+.produtoA p{
+    position: relative;
+   
+}
+.produtoA button{
+    color: #fff;
+    background: none;
+    position: relative;
+    left: 9ch;
+    top: 5ch;
+    width: 10ch;
+    height:5ch;
+    border-radius: 30px;
+    border: solid 2px #132743;
+    transition: 0.5s;
+    
+}
+.produtoA button:hover{
+    background: #132743;
+    border: none;
+
+}
+
+
+.produtoB{
+  position: inherit;
+   margin: 5ch 3ch;
+  line-height:1.2;
+  background-color: rgba(25,2,47,0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  /*background: #f15;*/
+  width: 30ch;
+  height: 50ch;
+  border-radius: 10px;
+  transition: 0.8s;
+  }
+  .produtoB:hover{
+    position: relative;
+    background: #f15;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    width: 32ch;
+    height: 52ch;
+    top:-2ch;
+  }
+  .produtoB img{
+      width: 100%;
+      height: 15ch;
+      border-radius:10px ;
+  }
+  .produtoB h4{
+      position: relative;
+     
+  }
+  .produtoB p{
+      position: relative;
+      
+  }
+  .produtoB button{
+    color: #fff;
+    background: none;
+    position: relative;
+    left: 9ch;
+    top: 5ch;
+    width: 10ch;
+    height:5ch;
+    border-radius: 30px;
+    border: solid 2px #132743;
+    transition: 0.5s;
+  }
+  .produtoB button:hover{
+    background: #132743;
+    border: none;
+
+}
+
+      .copyrightText
+      {
+         padding: 8px 40px;
+         border-top:1px solid rgba(0,0,0,0.1);
+         text-align: center;
+         background: #fff;
+      }
+      .copyrightText p
+      {
+         color: #333;
+     
+      }
+      .copyrightText a
+      {
+         color: #ff0157;
+         font-weight: 500;
+         text-decoration: none;
+         
+      }
+      #banner{
+      width: 100%;
+      }
+      #carouselExampleIndicators{
+          width: 100%;
+      }
+  .carousel-item  img{
+      position: relative;
+     width: 100%;
+      height: 50ch;         
+  }
+      
+footer{
+    background-color: rgb(78, 10, 141);
+    height: 40vh;
+}
+#footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    box-sizing: border-box;
+}
+#map{
+    margin-left: 5vw;
+    margin-top: 5vh;
+    width: 35vw;
+    height: 30vh;
+    background-image: url("../img/map.png");
+    background-color: thistle;
+    border: solid 5px rgb(78, 10, 141);
+    border-radius: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#info{
+    margin-right: 5vw;
+    margin-top: 5vh;
+    width: 25vw;
+    color: white;
+    text-align: justify;
+}
+#midias{
+    width: 100%;
+    display: inline-flex;
+}
+#insta{
+    width: 2vw;
+    height: 2vw;
+    margin-right: 1vw;
+    background-image: url(../img/vec-ig.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#fb{
+    width: 2vw;
+    height: 2vw;
+    margin-right: 1vw;
+    background-image: url(../img/vec-fb.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#wpp{
+    width: 2vw;
+    height: 2vw;
+    background-image: url(../img/vec-wp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  @media (max-width:1000px){
+    .produtos{
+        flex-direction:column;
+    } 
+    .produtoA{
+        position: relative;
+        margin-left: -5ch;
+    }
+    .produtoB{
+        margin-top: 4ch;
+     margin-left: -5ch;
+    }
+
+
+
+
+    #btn-mobile
+    {
+        display: block;
+    }
+    #menu
+    {
+        display: block;
+        
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background: #e7e7e7;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000px;
+        visibility: hidden;
+        overflow-y: hidden;
+
+    } 
+    #nav.active #menu
+    { 
+        
+        
+        height: auto /*calc(100vh - 70px)*/;
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #menu a 
+    {
+        padding: 1rem 0;
+        margin:0 1rem;
+        border-bottom: 2px solid rgba(0, 0,0, .05);
+    }  
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+    #hamburger
+    {
+        display: block;
+      width: 20px;
+      border-top:2px solid ;
+    }
+    #hamburger::after , #hamburger::before
+    {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background:currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #hamburger
+    {
+       border-top-color: transparent;
+    }
+    #nav.active #hamburger::before
+    {
+       transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after
+    {
+        transform: rotate(-135deg);
+        top: -7px;
+
+    }
+    #banner{
+        width: 100%;
+
+    }
+
+    footer{
+        background-color: rgb(78, 10, 141);
+        height: 80vh;
+    }
+    #footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 70px;
+        box-sizing: border-box;
+    }
+    #map{
+        margin-left: 5vw;
+        margin-top: 5vh;
+        width: 90vw;
+        height: 30vh;
+        background-image: url("../img/map.png");
+        background-color: thistle;
+        border: solid 5px rgb(78, 10, 141);
+        border-radius: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    #info{
+        margin-left: 5vw;
+        margin-top: 5vh;
+        width: 90vw;
+        color: white;
+        text-align: justify;
+    }
+    #midias{
+        width: 100%;
+        display: inline-flex;
+    }
+    #insta{
+        width: 8vw;
+        height: 8vw;
+        margin-right: 1vw;
+        background-image: url(../img/vec-ig.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #fb{
+        width: 8vw;
+        height: 8vw;
+        margin-right: 1vw;
+        background-image: url(../img/vec-fb.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #wpp{
+        width: 8vw;
+        height: 8vw;
+        background-image: url(../img/vec-wp.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

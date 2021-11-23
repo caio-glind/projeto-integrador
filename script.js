@@ -1,11 +1,16 @@
+const btnmobile =document.getElementById('btn-mobile');
+        
+function toggleMenu(event)
+{
+    if(event.type=== 'touchstart')event.preventDefault();
+
+    const nav =document.getElementById('nav');
+    nav.classList.toggle('active');
+    const active =nav.classList.contains('active');
+    event.currentTarget.setAttribute('aria-expanded', active)
+}
 
 
-//contote do baner para lola para os lados por meiio do escrol do molse 
-/*document.querySelector("#items")
-.addEventListener("wheel", event =>{
-  if(event.deltaY > 0){
-      event.target.scrollBy(300,0)
-  }else{
-      event.target.scrollBy(-300,0)
-  }
-})
+btnmobile.addEventListener('click', toggleMenu);
+btnmobile.addEventListener('touchstart', toggleMenu);
+
