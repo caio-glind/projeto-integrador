@@ -2,7 +2,7 @@
  projeto com nodejs
  
  home
-![image](https://user-images.githubusercontent.com/77419047/142572705-bce8e424-0c06-48b5-8e59-24b4ff715c14.png)
+![image](https://user-images.githubusercontent.com/77419047/143523872-da7231d6-4400-4be0-8d01-7c20b666fe1d.png)
 ![image](https://user-images.githubusercontent.com/77419047/142573050-c8bc2a2d-c905-40ae-a9a9-0bd0cb1984f0.png)
 produtos da parte da home 
 ![image](https://user-images.githubusercontent.com/77419047/142573136-92353b75-f1b6-4fec-a0e1-ccbb9c61e65a.png)
