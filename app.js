@@ -20,3 +20,4 @@ app.use(express.static("public"));
 app.listen(8078,function(){
     console.log(" servido ta ligado na url : http://localhost:8078/")
   })
+  
