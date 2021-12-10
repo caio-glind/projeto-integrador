@@ -7,6 +7,20 @@
         <title>Login</title>
     </head>
     <body>
+        <header id="header">
+            <a id="logo"  aria-expanded="false" href="http://localhost:8078/">Logo</a>
+            <nav id="nav">
+                <button id="btn-mobile">menu
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu">
+                    <li><a id="cd" href="/">Sobre</a></li>
+                    <li><a id="cd"href="/">Produltos</a></li>
+                    <li><a id="cd"href="http://localhost:8078/usuario/login">Login</a></li>
+                    <li><a id="cd"href="/">contado</a></li>
+                </ul>
+            </nav>
+        </header>
         <main class="login">
             <div class="login__container">
                 <h1 class="login__title">Login</h1>
@@ -20,5 +34,24 @@
                 </form>
             </div>
         </main>
-    </body>
+<script >
+  const btnmobile =document.getElementById('btn-mobile');
+        
+            function toggleMenu(event)
+            {
+                if(event.type=== 'touchstart')event.preventDefault();
+            
+                const nav =document.getElementById('nav');
+                nav.classList.toggle('active');
+                const active =nav.classList.contains('active');
+                event.currentTarget.setAttribute('aria-expanded', active)
+            }
+            
+            
+            btnmobile.addEventListener('click', toggleMenu);
+            btnmobile.addEventListener('touchstart', toggleMenu);
+            
+</script>
+
+</body>
 </html>

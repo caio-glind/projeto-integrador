@@ -8,6 +8,7 @@ body
     scroll-behavior: smooth;
     color: #fff;
    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+   background-size: cover;
 }
 
 
@@ -36,7 +37,6 @@ font-weight: bold;
     justify-content: space-between;
     background: #fff;
     border-radius: 5px;
-    z-index: 100px;
 }
 #header a{
     color: black;
@@ -54,199 +54,73 @@ font-weight: bold;
     display: flex;
     list-style: none;
     gap: .5rem;
-    z-index: 100px;
 }
 #menu a
 {
     display: block;
     padding: .5rem;
-    
 
 }
 #btn-mobile{
     display: none;
 }
 
-/*baner !!!!!*/
-#items-wrapper{
-    position: inherit;
-  
-    width: 100%;
-}
-#items{
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
-   
-}
-.item{
-    flex: none;
+
+
+.produto{
     z-index: 0px;
+ display: flex;
+ /*background: #f15;*/
+}
 
-    width: 100%;
-    height: 400px;
-    scroll-snap-align: start; 
-    pointer-events: none;
-}
-#items img{
-    z-index: 0px;
-    width: 100%;
-    height: 100%;
-}
-.produtos{
-    margin-left: 5ch;
-    margin-top:5ch;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: auto;
-   
-    
-    height: auto;
-   /* flex-direction: row;
-    display: flex;
-    margin-left: 2ch;*/
-}
-.produtoA{
-    position: inherit;
-    margin: 5ch 3ch;
-  line-height:1.2;
-  background-color: rgba(25,2,47,0.2);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  /*background: #f15;*/
-  width: 30ch;
-  height: 50ch;
-  border-radius: 10px;
-  transition: 0.8s;
-  
-}
-.produtoA:hover{
+
+#carouselExampleFade{
     position: relative;
-    background: #f15;
-    box-shadow:0 5px 20px rgba(0,0,0,0.05);
-    width: 32ch;
-    height: 52ch;
-    top:-2ch;
+    margin-left: 5%;
+    margin-top: 10ch;
+    width: 50ch;
+    height: 50ch;
+}
+
+#carouselExampleFade img{
+    width: 40ch;
+    height: 40ch;
     
 }
-.produtoA img{
-    width: 100%;
-    height: 15ch;
-    border-radius:10px ;
-}
-.produtoA h4{
+.infoma{
+    text-align: justify;
+    margin-left: 1ch;
+    margin-top: 10ch;
     position: relative;
-    
+    width: 30ch;
+    height: 40ch;
+
 }
-.produtoA p{
+.pagamento{
+    margin-left: 4ch;
+    margin-top: 10ch;
     position: relative;
-   
+    width: 30ch;
+    height: 40ch;
+    list-style: none;
+
 }
-.produtoA button{
+.pagamento ul {
+    list-style: none;
+
+}
+.carrinho button{
+    background: #d75413;
     color: #fff;
-    background: none;
-    position: relative;
-    left: 9ch;
-    top: 5ch;
-    width: 10ch;
-    height:5ch;
-    border-radius: 30px;
-    border: solid 2px #132743;
-    transition: 0.5s;
+    border-radius: 20px;
+    border: none;
     
+    height: 5ch;
+    width: 20ch;
+    animation: boto 1.5s infinite;
+    animation-direction: alternate-reverse;
 }
-.produtoA button:hover{
-    background: #132743;
-    border: none;
-
-}
-
-
-.produtoB{
-  position: inherit;
-   margin: 5ch 3ch;
-  line-height:1.2;
-  background-color: rgba(25,2,47,0.2);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  /*background: #f15;*/
-  width: 30ch;
-  height: 50ch;
-  border-radius: 10px;
-  transition: 0.8s;
-  }
-  .produtoB:hover{
-    position: relative;
-    background: #f15;
-    box-shadow:0 5px 20px rgba(0,0,0,0.05);
-    width: 32ch;
-    height: 52ch;
-    top:-2ch;
-  }
-  .produtoB img{
-      width: 100%;
-      height: 15ch;
-      border-radius:10px ;
-  }
-  .produtoB h4{
-      position: relative;
-     
-  }
-  .produtoB p{
-      position: relative;
-      
-  }
-  .produtoB button{
-    color: #fff;
-    background: none;
-    position: relative;
-    left: 9ch;
-    top: 5ch;
-    width: 10ch;
-    height:5ch;
-    border-radius: 30px;
-    border: solid 2px #132743;
-    transition: 0.5s;
-  }
-  .produtoB button:hover{
-    background: #132743;
-    border: none;
-
-}
-
-      .copyrightText
-      {
-         padding: 8px 40px;
-         border-top:1px solid rgba(0,0,0,0.1);
-         text-align: center;
-         background: #fff;
-      }
-      .copyrightText p
-      {
-         color: #333;
-     
-      }
-      .copyrightText a
-      {
-         color: #ff0157;
-         font-weight: 500;
-         text-decoration: none;
-         
-      }
-      #banner{
-      width: 100%;
-      }
-      #carouselExampleIndicators{
-          width: 100%;
-      }
-  .carousel-item  img{
-      position: relative;
-     width: 100%;
-      height: 50ch;         
-  }
-      
+/*------------roda pe------------------------------------*/
 footer{
     background-color: #fff;
     color: #001;
@@ -310,22 +184,26 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
 }
-  @media (max-width:1000px){
-    .produtos{
-        flex-direction:column;
-    } 
-    .produtoA{
-        position: relative;
-        left: -5ch;
-        
+@keyframes boto{
+    0%{
+         transform: translateX(2ch);
+         transform: translateY(2ch);
+        height: 5ch;
+        width: 20ch;
+        top: 2ch;
         
     }
-    .produtoB{
-        margin-top: 4ch;
-       margin-left: -2ch;
-    }
-
-
+   100%{
+    transform: translateX(3ch);
+    
+       height: 7ch;
+       width: 23ch;
+       top: 4ch;
+   } 
+}
+@media(max-width:1000px){
+    
+    
 
 
     #btn-mobile
@@ -405,10 +283,53 @@ footer{
         top: -7px;
 
     }
-    #banner{
-        width: 100%;
 
+    
+    .produto{
+        display: block;
+       }
+       
+       
+       #carouselExampleFade{
+           position: relative;
+           margin-left: 1%;
+           margin-top: 10ch;
+           width: 35ch;
+           height: 35ch;
+           top: 5ch;
+       }
+       
+       #carouselExampleFade img{
+           width: 35ch;
+           height: 35ch;  
+       }
+       .pagamento{
+        margin-left: 1ch;
+        top: -20ch;
+        position: relative;
+        width: 30ch;
+        height: 40ch;
+        list-style: none;
+    
     }
+
+    .infoma h1{
+    position: relative;
+    top: -15ch;
+    font-size: 40px;
+    }
+    .infoma{
+        
+        top: -10ch;
+    }
+     
+    .pagamento{
+        top: -30ch;
+    }
+    .carrinho button{
+        margin-left: 5ch;
+    }
+
 
     footer{
         
@@ -461,4 +382,7 @@ footer{
         height: 8vw;
         
     }
+
+
+
 }
