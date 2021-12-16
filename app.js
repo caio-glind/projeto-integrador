@@ -9,7 +9,7 @@ const produto =require("./routes/produto")
 app.use(express.static("public"));
 
  app.get("/",(req,res)=>{
-    res.sendFile(path.join(__dirname +'/public/views/index.html'))//rota de principal
+    res.render(path.join(__dirname +'/views/index.ejs'))//rota de principal
  })
 
 

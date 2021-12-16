@@ -5,28 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
     <link rel="stylesheet" href="/css/produtoA.css">
-    <title>Produto</title>
+    <title>PRODUTO</title>
 </head>
 <body>
-  
-   <header id="header">
-    <a id="logo" aria-expanded="false" href="http://localhost:8078/">Logo</a>
-    <nav id="nav">
-        <button id="btn-mobile">menu
-            <span id="hamburger"></span>
-        </button>
-        <ul id="menu">
-            <li><a id="cd" href="/">Sobre</a></li>
-            <li><a id="cd"href="/">Produltos</a></li>
-            <li><a id="cd"href="http://localhost:8078/login">Login</a></li>
-            <li><a id="cd"href="/">contado</a></li>
-        </ul>
-    </nav>
-   </header> 
+    
 
-   <section class="produto">
+
+    <%- include('./partials/header') %>
+
+    <section class="produto">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
             <div class="carousel-item active">
@@ -68,43 +56,13 @@
       </div>
 
     </section>
-    
-    <footer>
-      <section id="footer">
-          <div id="map">
-          </div>
-          <div id="info">
-              <p>Grupo Media</p>
-              <p>Sobre nós</p>
-              <p>Ajuda</p>
-              <p>Fale Conosco</p>
-              <p style="margin-bottom: 5px;">NOSSSAS REDES SOCIAIS</p>
-              <div id="midias">
-                  <div id="insta"></div>
-                  <div id="fb"></div>
-                  <div id="wpp"></div>
-              </div>
-          </div>
-      </section>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-<script>
-  const btnmobile =document.getElementById('btn-mobile');
-        
-        function toggleMenu(event)
-        {
-            if(event.type=== 'touchstart')event.preventDefault();
-        
-            const nav =document.getElementById('nav');
-            nav.classList.toggle('active');
-            const active =nav.classList.contains('active');
-            event.currentTarget.setAttribute('aria-expanded', active)
-        }
-        
-        
-        btnmobile.addEventListener('click', toggleMenu);
-        btnmobile.addEventListener('touchstart', toggleMenu);
-</script>
+
+
+    <%- include('./partials/footer') %>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

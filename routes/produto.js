@@ -9,7 +9,7 @@ app.use(express.static("public"));
 
 router.get("/produtoa",(req,res)=>{
    
-    res.sendFile('/home/caio/Documentos/GitHub/projeto-integrador/public/views/produto/produtoa.html')//rota de login
+    res.render('../views/VerProduto.ejs')//rota de VER PRODUTO
 
 })
 
